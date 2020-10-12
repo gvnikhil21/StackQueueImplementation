@@ -15,11 +15,13 @@ public class StackQueueMain {
 
 		// adds element to stack
 		stack.push(70);
+		System.out.println("----Stack----");
+		stack.printList();
 		stack.push(30);
+		stack.printList();
 		stack.push(56);
 
 		// prints element in stack
-		System.out.println("----Stack----");
 		stack.printList();
 		System.out.println("Top element in the stack is: " + stack.peek());
 
@@ -34,12 +36,20 @@ public class StackQueueMain {
 
 		// adds element to queue
 		queue.enqueue(56);
+		System.out.println("---Queue-----");
+		queue.printList();
 		queue.enqueue(30);
+		queue.printList();
 		queue.enqueue(70);
 
 		// prints element in queue
-		System.out.println("---Queue-----");
 		queue.printList();
+		System.out.println("Front element in the queue is: " + queue.peek());
+
+		// removes the front-most element in queue and returns it
+		System.out.println("Popped element is: " + queue.dequeue());
+		queue.printList();
+		System.out.println("Front element in the queue is: " + queue.peek());
 	}
 
 }
