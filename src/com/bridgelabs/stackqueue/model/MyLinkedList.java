@@ -64,6 +64,11 @@ public class MyLinkedList<E> implements ILinkedList<E> {
 		size++;
 	}
 
+	// returns the front element in the linked-list
+	public E peek() {
+		return head.data;
+	}
+
 	// removes first element from the linked-list
 	public E remove() {
 		checkNoSuchElementException();

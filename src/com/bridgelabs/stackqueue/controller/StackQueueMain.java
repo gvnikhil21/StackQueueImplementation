@@ -18,6 +18,12 @@ public class StackQueueMain {
 
 		// prints element in stack
 		stack.printList();
+		System.out.println("Top element in the stack is: " + stack.peek());
+
+		// removes the top-most element in stack and returns it
+		System.out.println("Popped element is: " + stack.pop());
+		stack.printList();
+		System.out.println("Top element in the stack is: " + stack.peek());
 	}
 
 }

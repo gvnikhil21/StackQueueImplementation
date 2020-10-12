@@ -12,6 +12,16 @@ public class MyStack<E> {
 		linkedList.addFirst(data);
 	}
 
+	// returns the top element of the stack
+	public E peek() {
+		return linkedList.peek();
+	}
+
+	// removes the top element form the stack and returns it
+	public E pop() {
+		return linkedList.remove();
+	}
+
 	// returns size of the stack
 	public int size() {
 		return linkedList.size();
