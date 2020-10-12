@@ -27,6 +27,11 @@ public class MyStack<E> {
 		return linkedList.size();
 	}
 
+	// checks for empty stack
+	public boolean isEmpty() {
+		return linkedList.isEmpty();
+	}
+
 	// prints element in stack
 	public void printList() {
 		linkedList.printList();
